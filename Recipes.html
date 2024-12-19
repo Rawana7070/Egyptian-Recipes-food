@@ -1,0 +1,784 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/RecipeLogo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="/assests/Recipes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Egyptian Recipes</title>
+</head>
+
+<body data-page="index">
+    
+        <!-- Main Content -->
+        <div class="card-grid" >
+            <div class="food-list" id="food-list">
+                    <p id="none" style="display: none;">Sorry, the food you were looking for was not available.</p>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="/PNG/Koshari.jpg">
+                        </div>
+                        <div class="card-body" >
+                        <h3> Koshari </h3>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn" onclick="getRecipeDetails()">Get Recipe</button>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="/PNG/Ful medams.jpg">
+                        </div>
+                        <div class="card-body" >
+                        <h3> Ful Medames </h3>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn" onclick="get2ndRecipe()">Get Recipe</button>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="/PNG/molokhia.jpeg">
+                        </div>
+                        <div class="card-body" >
+                            <h3>Molokhia</h3>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn" onclick="get3rdRecipe()">Get Recipe</button>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="/PNG/falafel.jpeg">
+                        </div>
+                        <div class="card-body" >
+                            <h3> Falafel </h3>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn" onclick="get4thRecipe()">Get Recipe</button>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="/PNG/Fattah.jpeg">
+                        </div>
+                        <div class="card-body" >
+                        <h3> Fattah </h3>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn" onclick="get5thRecipe()">Get Recipe</button>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="/PNG/kousa mahsi.jpeg">
+                        </div>
+                        <div class="card-body" >
+                        <h3>Kousa  mahshi </h3>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn" onclick="get6thRecipe()">Get Recipe</button>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="/PNG/hawawshi.jpeg">
+                        </div>
+                        <div class="card-body" >
+                        <h3> Hawawshi</h3>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn" onclick="get7thRecipe()">Get Recipe</button>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="/PNG/shawrma.jpeg">
+                        </div>
+                        <div class="card-body" >
+                        <h3>Shawarma</h3>
+                        </div>
+
+                        <div class="card-footer">
+                            <button class="btn" onclick="get8thRecipe()">Get Recipe</button>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="/PNG/mahshi 1.jpeg">
+                        </div>
+                        <div class="card-body" >
+                        <h3>Mahshi</h3>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn" onclick="get8thRecipe()">Get Recipe</button>
+                        </div>
+                    </div>
+                   
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="/PNG/baba khanoug.jpeg">
+                        </div>
+                        <div class="card-body" >
+                        <h3>Baba ghanoush</h3>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn" onclick="get10thRecipe()">Get Recipe</button>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="/PNG/umm ali.jpeg">
+                        </div>
+                        <div class="card-body" >
+                        <h3>umm Ali</h3>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn" onclick="get11thRecipe()">Get Recipe</button>
+                        </div>
+                    </div>
+            </div> 
+
+            <!--Ending of Main Content-->
+
+            <!--Recipe Details-->
+            <div class = "meal-detail" id="meal-detail">
+                <!-- recipe close btn -->
+                <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn" onclick="closeBtn()">
+                    <i class ="fas fa-times"></i>
+                </button>
+
+                <!-- recipe details -->
+                <div class="meal-content">
+                    <h2 class="meal-name">Koshari </h2>
+                    <div class="meal-about">
+                        <h3 class="meal-title-about">About Meal</h3>
+                        <p class="meal-descript-about">A beloved street food and national dish, Koshari is a unique and flavorful vegetarian concoction.</p>
+                    </div>
+                    <div class = "meal-instruct">
+                        <h3>Ingridients:</h3>
+                        <p>
+                           <Br> - Rice </br>
+                           <br> - Macaroni </br>
+                           <br> - Lentils </br>
+                          <br>  - Chickpeas </br>
+                           <br> - Crispy fried onions </br>
+                           <br> - Tomato sauce </br>
+                            <br>- Vinegar </br>
+                         <br>   - Garlic vinegar </br>
+                          <br>  - Hot sauce (optional) </br>
+                         </p>
+                        <h3>Instruction:</h3>
+                        <p>
+                    
+                   <br>  - Cook rice and macaroni separately until tender.
+                   <br>  - Sauté onions until golden brown.
+                   <br>  - Cook lentils and chickpeas until tender.
+                    <br> - Combine cooked rice, macaroni, lentils, and chickpeas in a serving bowl.
+                    <br> - Drizzle with tomato sauce, vinegar, and garlic vinegar.
+                    <br> - Top with crispy fried onions and hot sauce to taste.
+                        </p>
+                
+                    </div>
+                    <div class = "meal-img">
+                        <img src = "/PNG/Koshari.jpg" alt = "">
+                      </div>
+                      <div class = "meal-link">
+                        <a href="https://www.bing.com/ck/a?!&&p=bf773c5ac58143ed24afc5965d12691840542bef7e175134581fcb4eef77467eJmltdHM9MTczNDU2NjQwMA&ptn=3&ver=2&hsh=4&fclid=17680e30-623f-61bf-1f58-1b7f6348602c&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9a2hvc2hhcmkrdmlkZW8mbWlkPUQwRTVDNzNEN0IwRUNDMkFBRTQ0RDBFNUM3M0Q3QjBFQ0MyQUFFNDQmRk9STT1WSVJF&ntb=1" class="meal-link-btn">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "second-meal-detail" id="second-meal-detail">
+                <!-- recipe close btn -->
+                <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn" onclick="closeBtn()">
+                    <i class ="fas fa-times"></i>
+                </button>
+
+                <!-- recipe details -->
+                <div class="meal-content">
+                    <h2 class="meal-name">Ful Medames</h2>
+                    <div class="meal-about">
+                        <h3 class="meal-title-about">About Meal</h3>
+                        <p class="meal-descript-about">A national dish made from cooked fava beans, mashed and seasoned with various spices and herbs. It's often served for breakfast or lunch, typically with pita bread, eggs, and olives. </p>
+                    </div>
+                    <div class = "meal-instruct">
+                        <h3>Ingridients:</h3>
+                        <p><br>
+                          <br>  - Fava beans
+                          <br>  - Olive oil
+                           <br> - Onion
+                          <br>  - Garlic
+                           <br> - Cumin
+                            <br>- Coriander
+                          <br>  - Salt
+                           <br> - Pepper
+                          <br>  - Lemon juice
+                        </p>
+                        <h3>Instruction:</h3>
+                        <p>
+                         <br>   - Soak fava beans overnight.
+                          <br>  - Drain and boil until soft.
+                          <br>  - Mash the beans with a fork or potato masher.
+                          <br>  - Heat olive oil in a pan and sauté onion and garlic.
+                          <br>  - Add cumin, coriander, salt, and pepper.
+                          <br>  - Stir in mashed fava beans and cook for a few minutes.
+                           <br> - Adjust seasoning with lemon juice.
+                            </p>
+                
+                    </div>
+                    <div class = "meal-img">
+                        <img src = "/PNG/Ful medams.jpg" alt = "">
+                      </div>
+                      <div class = "meal-link">
+                        <a href="https://www.bing.com/ck/a?!&&p=de6e76f59a079d09bd2f880771d081b2ab9008cde41f48d8d3a936cb8f3821feJmltdHM9MTczNDU2NjQwMA&ptn=3&ver=2&hsh=4&fclid=17680e30-623f-61bf-1f58-1b7f6348602c&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9ZnVsK21lZGFtaXMrdmlkZW8mbWlkPTdCNThCRkM5RjE3RkUwMDU1QjAzN0I1OEJGQzlGMTdGRTAwNTVCMDMmRk9STT1WSVJF&ntb=1" class="meal-link-btn" >Watch Video</a>
+                    </div>
+                </div>
+            </div>  
+            <div class = "third-meal-detail" id="third-meal-detail">
+                <!-- recipe close btn -->
+                <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn" onclick="closeBtn()">
+                    <i class ="fas fa-times"></i>
+                </button>
+
+                <!-- recipe details -->
+                <div class="meal-content">
+                    <h2 class="meal-name">Molokhia</h2>
+                    <div class="meal-about">
+                        <h3 class="meal-title-about">About Meal</h3>
+                        <p class="meal-descript-about"> A leafy green vegetable dish made from mallow leaves, cooked in a rich tomato sauce with garlic and ginger. It's often served with rice or bread.
+                        </p>
+                    </div>
+                    <div class = "meal-instruct">
+                        <h3>Ingridients:</h3>
+                        <p>
+                          <br>  - Mallow leaves
+                           <br> - Tomato sauce
+                           <br> - Onion
+                           <br> - Garlic
+                           <br> - Ginger
+                            <br>- Olive oil
+                            <br>- Salt
+                           <br> - Pepper
+                        </p>
+                        <h3>Instruction:</h3>
+                        <p><br>
+                            - Wash and chop mallow leaves.
+                           <br> - Sautee onion and garlic in olive oil until golden brown.
+                          <br>  - Add tomato sauce and cook for a few minutes.
+                           <br> - Stir in mallow leaves and cook until tender.
+                           <br> - Season with ginger, salt, and pepper.
+                            </p>
+                
+                    </div>
+                    <div class = "meal-img">
+                        <img src = "/PNG/molokhia.jpeg" alt = "">
+                      </div>
+                      <div class = "meal-link">
+                        <a href="https://www.bing.com/ck/a?!&&p=52cd3af8759422c43d02d9a2cfd4543e33a1f6cb26a2a1a8454d6d8ef05f67f5JmltdHM9MTczNDU2NjQwMA&ptn=3&ver=2&hsh=4&fclid=17680e30-623f-61bf-1f58-1b7f6348602c&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9bW9sb2toaWErdmVkaW8mbWlkPTYxNkZFRURBODg0N0JEQjI5QzdFNjE2RkVFREE4ODQ3QkRCMjlDN0UmRk9STT1WSVJF&ntb=1" class="meal-link-btn" >Watch Video</a>
+                    </div>
+                </div>
+            </div>  
+            <div class = "four-meal-detail" id="four-meal-detail">
+                <!-- recipe close btn -->
+                <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn" onclick="closeBtn()">
+                    <i class ="fas fa-times"></i>
+                </button>
+
+                <!-- recipe details -->
+                <div class="meal-content">
+                    <h2 class="meal-name">Falafel</h2>
+                    <div class="meal-about">
+                        <h3 class="meal-title-about">About Meal</h3>
+                        <p class="meal-descript-about">Deep-fried chickpea fritters, often served in pita bread or with salads. They are a popular street food and can be found in many restaurants and food stalls throughout Egypt.
+                        </p>
+                    </div>
+                    <div class = "meal-instruct">
+                        <h3>Ingridients:</h3>
+                        <p>
+                            
+
+<br>- 1 cup dried chickpeas, soaked overnight and drained
+<br>- 1/2 cup chopped fresh cilantro
+<br>- 1/4 cup chopped fresh parsley
+<br>- 1/4 cup chopped green onions
+<br>- 2 cloves garlic, minced
+<br>- 1 teaspoon ground cumin
+<br>- 1/2 teaspoon ground coriander
+<br>- 1/4 teaspoon baking powder
+<br>- 1/4 teaspoon salt
+<br>- 1/8 teaspoon black pepper
+<br>- Vegetable oil for frying
+
+                        </p>
+                        <h3>Instruction:</h3>
+                        <p>
+
+<br>- Combine ingredients: In a food processor, combine the chickpeas, cilantro, parsley, green onions, garlic, cumin, coriander, baking powder, salt, and pepper. Pulse until the mixture is finely chopped but not completely smooth.
+<br>- Form patties: Use your hands to shape the mixture into small patties or balls.
+<br>- Fry: Heat about 1 inch of vegetable oil in a deep skillet over medium heat. Carefully add the falafel patties to the hot oil and fry for 2-3 minutes per side, or until golden brown and crispy.
+<br>- Drain: Remove the falafel patties from the oil and drain on paper towels.
+<br>- Serve: Serve the falafel hot or warm, in pita bread with your favorite toppings, or as part of a mezze platter.
+
+                        </p>
+                
+                    </div>
+                    <div class = "meal-img">
+                        <img src = "/PNG/falafel.jpeg" alt = "">
+                      </div>
+                      <div class = "meal-link">
+                        <a href="https://www.bing.com/ck/a?!&&p=bbd996b3266f90a11f41d7aca06567eedb7c5dc0aaeb7781bb2cb4ebfc992950JmltdHM9MTczNDU2NjQwMA&ptn=3&ver=2&hsh=4&fclid=17680e30-623f-61bf-1f58-1b7f6348602c&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9ZmFsYWZlbGZvb2QrdmlkZW8mbWlkPUFDNjFBMjNFMTg0RjRDRkUxNjRBQUM2MUEyM0UxODRGNENGRTE2NEEmRk9STT1WSVJF&ntb=1" class="meal-link-btn" >Watch Video</a>
+                    </div>
+                </div>
+            </div>  
+            <div class = "five-meal-detail" id="five-meal-detail">
+                <!-- recipe close btn -->
+                <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn" onclick="closeBtn()">
+                    <i class ="fas fa-times"></i>
+                </button>
+
+                <!-- recipe details -->
+                <div class="meal-content">
+                    <h2 class="meal-name">Fattah</h2>
+                    <div class="meal-about">
+                        <h3 class="meal-title-about">About Meal</h3>
+                        <p class="meal-descript-about">A hearty dish made with layers of bread, rice, and meat or chicken, topped with a rich tomato sauce. It's a popular dish for special occasions and holidays.
+                        </p>
+                    </div>
+                    <div class = "meal-instruct">
+                        <h3>Ingridients:</h3>
+                        <p>
+                           <br> - For the Meat:
+                             <br>   - 1 lb bone-in lamb or beef shoulder, cut into 2-inch pieces
+                              <br>  - 1 large onion, chopped
+                               <br> - 4 cloves garlic, minced
+                                <br>- 1 teaspoon ground cumin
+                               <br> - 1/2 teaspoon ground coriander
+                              <br>  - 1/4 teaspoon ground cinnamon
+                            <br>    - Salt and pepper to taste
+                              <br>  - Water to cover
+                            <br>- For the Rice:
+                             <br>   - 1 cup long-grain rice
+                              <br>  - 2 cups chicken or vegetable broth
+                               <br> - Salt to taste
+                           <br> - For the Sauce:
+                              <br>  - 1 tablespoon olive oil
+                               <br> - 1 onion, chopped
+                               <br> - 3 cloves garlic, minced
+                               <br> - 1 (14.5 ounce) can diced tomatoes, undrained
+                              <br>  - 1 tablespoon tomato paste
+                              <br>  - 1/2 teaspoon ground cumin
+                              <br>  - 1/4 teaspoon ground coriander
+                               <br> - Salt and pepper to taste
+                           <br> - For Serving:
+                              <br>  - 4-6 pieces of pita bread, cut into small pieces
+                               <br> - Plain yogurt (optional)
+                        </p>
+                        <h3>Instruction:</h3>
+                        <p><br>
+                            - Make the Meat: In a large pot or Dutch oven, brown the meat on all sides over medium-high heat. Add the onion, garlic, cumin, coriander, cinnamon, salt, and pepper. Pour in enough water to cover the meat. Bring to a boil, then reduce heat to low, cover, and simmer for 1-1.5 hours, or until the meat is very tender. Remove the meat from the pot and shred or chop it. Strain the broth and set aside.
+                            <br>- Cook the Rice: In a separate pot, bring the broth to a boil. Add the rice and salt. Reduce heat to low, cover, and simmer for 15-20 minutes, or until the rice is tender and the liquid is absorbed.
+                            <br>- Make the Sauce: Heat the olive oil in a saucepan over medium heat. Add the onion and garlic and cook until softened, about 5 minutes. Add the diced tomatoes, tomato paste, cumin, coriander, salt, and pepper. Bring to a simmer and cook for 10-15 minutes, or until the sauce has thickened.
+                           <br> - Assemble the Fattah: In a large serving bowl, layer the pita bread pieces, rice, shredded meat, and tomato sauce. Repeat the layers until all ingredients are used.
+                           <br> - Serve: Serve the Fattah hot, garnished with yogurt if desired.
+                        </p>
+                
+                    </div>
+                    <div class = "meal-img">
+                        <img src = "/PNG/Fattah.jpeg" alt = "">
+                      </div>
+                      <div class = "meal-link">
+                        <a href="/PNG/Fattah.jpeg" class="meal-link-btn" >Watch Video</a>
+                    </div>
+                </div>
+            </div> 
+            <div class = "six-meal-detail" id="six-meal-detail">
+                <!-- recipe close btn -->
+                <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn" onclick="closeBtn()">
+                    <i class ="fas fa-times"></i>
+                </button>
+
+                <!-- recipe details -->
+                <div class="meal-content">
+                    <h2 class="meal-name">kousa mahshi</h2>
+                    <div class="meal-about">
+                        <h3 class="meal-title-about">About Meal</h3>
+                        <p class="meal-descript-about">Kousa Mahshi is a beloved Middle Eastern dish, particularly popular in Egypt. It involves hollowing out zucchini and stuffing them with a flavorful mixture of rice, meat (often ground beef or lamb), and spices. The stuffed zucchini are then simmered in a rich tomato sauce, creating a comforting and flavorful meal.
+                        </p>
+                    </div>
+                    <div class = "meal-instruct">
+                        <h3>Ingridients:</h3>
+                        <p>
+                            Ingredients:
+
+<br>- For the Filling:
+<br>  - 1 pound ground beef or lamb
+<br>  - 1 cup long-grain rice
+<br>  - 1 large onion, finely chopped
+<br>  - 2 cloves garlic, minced
+<br>   - 1/2 cup chopped fresh parsley
+<br>  - 1/4 cup chopped fresh mint
+<br> - 1 teaspoon ground cumin
+<br>  - 1/2 teaspoon ground coriander
+<br>  - Salt and pepper to taste
+<br>- For the Sauce:
+<br>  - 1 (28-ounce) can crushed tomatoes
+<br>   - 1 onion, chopped
+<br>   - 2 cloves garlic, minced
+<br>  - 1 tablespoon tomato paste
+<br> - 1/2 teaspoon ground cumin
+<br> - 1/4 teaspoon ground coriander
+<br>  - Salt and pepper to taste
+<br>- Other Ingredients:
+
+   <br> - 6-8 small zucchini
+    <br>- 1 cup water
+   <br> - Olive oil for frying
+                        </p>
+                        <h3>Instruction:</h3>
+                        <p>
+                          <br> 
+                    
+                            - Prepare the Filling:
+                            <br>  - In a large skillet, brown the ground meat over medium heat.
+                            <br>    - Add the chopped onion and garlic and cook until softened.
+                            <br>    - Stir in the rice, parsley, mint, cumin, coriander, salt, and pepper. Cook for a few minutes more, until the rice is lightly toasted.
+                            <br>    - Prepare the Zucchini:
+                            <br>      - Trim the ends off the zucchini. Carefully scoop out the seeds using a spoon, being careful not to pierce the bottom.
+                            <br>   - Stuff the Zucchini:
+                           <br> - Fill each zucchini cavity with the meat and rice mixture.
+                            
+                             <br>   - Pack it in firmly but leave a little space at the top.
+                           <br> - Make the Sauce:
+                             <br>   - In a separate pot, combine the crushed tomatoes, chopped onion, garlic, tomato paste, cumin, coriander, salt, and pepper. Stir well.
+                           <br> - Simmer the Zucchini:
+                              <br>  - Arrange the stuffed zucchini in a large pot. Pour the tomato sauce over the zucchini, making sure they are mostly covered.
+                               <br> - Add 1 cup of water to the pot.
+                             <br>   - Bring to a simmer over medium heat, then reduce heat to low, cover, and cook for 30-45 minutes, or until the zucchini are tender and the rice is cooked through.
+                           <br> - Serve:
+                              <br>  - Serve the Kousa Mahshi hot, spooning some of the sauce over each zucchini.
+                             
+                        </p>
+                
+                    </div>
+                    <div class = "meal-img">
+                        <img src = "/PNG/kousa mahsi.jpeg" alt = "">
+                      </div>
+                      <div class = "meal-link">
+                        <a href="https://www.bing.com/ck/a?!&&p=1a3542c5e2f90a8f7334b6924a2bb14f662740a27eae7f3a4783d93d46f7e652JmltdHM9MTczNDU2NjQwMA&ptn=3&ver=2&hsh=4&fclid=17680e30-623f-61bf-1f58-1b7f6348602c&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9a291c2ErbWFoc2hpK3ZpZGVvJm1pZD1CQjIxRTIwQUM0M0QxQjk4OUYyNEJCMjFFMjBBQzQzRDFCOTg5RjI0JkZPUk09VklSRQ&ntb=1" class="meal-link-btn" >Watch Video</a>
+                    </div>
+                </div>
+            </div> 
+            <div class = "seven-meal-detail" id="seven-meal-detail">
+                <!-- recipe close btn -->
+                <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn" onclick="closeBtn()">
+                    <i class ="fas fa-times"></i>
+                </button>
+
+                <!-- recipe details -->
+                <div class="meal-content">
+                    <h2 class="meal-name">Hawawshi </h2>
+                    <div class="meal-about">
+                        <h3 class="meal-title-about">About Meal</h3>
+                        <p class="meal-descript-about">Hawawshi is a savory pie filled with spiced ground meat, onions, and peppers. It's a popular street food and can be found in many bakeries and food stalls throughout Egypt.
+                        </p>
+                    </div>
+                    <div class = "meal-instruct">
+                        <h3>Ingridients:</h3>
+                        <p><br>
+                
+
+                            - For the Filling:
+                               <br> - 1 pound ground beef or lamb
+                               <br> - 1 large onion, finely chopped
+                               <br> - 1 green bell pepper, finely chopped
+                               <br> - 1/2 teaspoon ground cumin
+                                <br>- 1/4 teaspoon ground coriander
+                               <br> - 1/4 teaspoon paprika
+                              <br>  - Salt and pepper to taste
+                           <br> - For the Dough:
+                             <br>   - 2 cups all-purpose flour
+                               <br> - 1 teaspoon salt
+                               <br> - 1/2 cup warm water
+                               <br> - 2 tablespoons olive oil
+                           <br> - For Baking:
+                               <br> - 1 egg, beaten
+                        </p>
+                        <h3>Instruction:</h3>
+                        <p>
+                
+
+                         <br>   - Make the Filling:
+                           <br>     - In a large bowl, combine the ground meat, onion, green bell pepper, cumin, coriander, paprika, salt, and pepper. Mix well.
+                           <br> - Make the Dough:
+                            <br>    - In a separate bowl, combine the flour and salt. Gradually add the warm water and olive oil, mixing until a soft dough forms. Knead the dough for 5-7 minutes until smooth and elastic.
+                           <br> - Assemble the Hawawshi:
+                             <br>   - Divide the dough into 8 equal pieces. Roll each piece into a ball.
+                              <br>  - On a lightly floured surface, roll out each ball of dough into a circle about 6 inches in diameter.
+                              <br>  - Place a spoonful of the meat mixture in the center of each circle.
+                               <br> - Fold the dough over the filling to form a half-moon shape. Pinch the edges together to seal.
+                               <br> - Place the Hawawshi on a baking sheet lined with parchment paper.
+                               <br> - Brush the tops of the Hawawshi with the beaten egg and sprinkle with sesame seeds (optional).
+                            <br>- Bake:
+                             <br>   - Bake in a preheated oven at 400°F (200°C) for 15-20 minutes, or until golden brown and the filling is cooked through.
+                              <br>  I hope this is clearer! Let me know if you have any other questions.
+                        </p>
+                
+                    </div>
+                    <div class = "meal-img">
+                        <img src = "/PNG/hawawshi.jpeg" alt = "">
+                      </div>
+                      <div class = "meal-link">
+                        <a href="https://www.bing.com/ck/a?!&&p=84fae501673ba9eb6f44e876b5951a4f95e7383e410485c26dadec292a859efaJmltdHM9MTczNDU2NjQwMA&ptn=3&ver=2&hsh=4&fclid=17680e30-623f-61bf-1f58-1b7f6348602c&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9aGF3YXdzaGkrdmlkZW8mbWlkPUM0RTIwQjc2MkUxQTU5RTAzQThFQzRFMjBCNzYyRTFBNTlFMDNBOEUmRk9STT1WSVJF&ntb=1" class="meal-link-btn" >Watch Video</a>
+                    </div>
+                </div>
+            </div> 
+            <div class = "eight-meal-detail" id="eight-meal-detail">
+                <!-- recipe close btn -->
+                <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn" onclick="closeBtn()">
+                    <i class ="fas fa-times"></i>
+                </button>
+
+                <!-- recipe details -->
+                <div class="meal-content">
+                    <h2 class="meal-name">shawrma</h2>
+                    <div class="meal-about">
+                        <h3 class="meal-title-about">About Meal</h3>
+                        <p class="meal-descript-about">Shawarma is a beloved Middle Eastern dish that's incredibly popular in Egypt. It consists of marinated meat (usually beef, lamb, or chicken) that is slowly roasted on a vertical rotisserie. The meat is then shaved off and served in pita bread with various toppings like tahini sauce, hummus, pickles, and vegetables.
+                        </p>
+                    </div>
+                    <div class = "meal-instruct">
+                        <h3>Ingridients:</h3>
+                        <p>
+                           <br> - For the Meat:
+                              <br>  - 2 pounds boneless, skinless chicken breasts or thighs
+                                <br>- 1/4 cup olive oil
+                             <br>   - 1/4 cup lemon juice
+                               <br> - 2 tablespoons paprika
+                              <br>  - 1 tablespoon ground cumin
+                              <br>  - 1 teaspoon garlic powder
+                                <br>- 1 teaspoon onion powder
+                               <br> - 1/2 teaspoon salt
+                              <br>  - 1/4 teaspoon black pepper
+    <br>    - Pita bread
+       <br> - Tahini sauce
+      <br>  - Hummus
+       <br> - Pickles
+       <br> - Sliced tomatoes
+       <br> - Sliced onions
+       <br> - Lettuce
+       <br> - Hot sauce (optional)
+
+                        </p>
+                        <h3>Instruction:</h3>
+                        <p>
+
+<br>- 2 pounds boneless, skinless chicken breasts or thighs
+<br>- 1/4 cup olive oil
+<br>- 1/4 cup lemon juice
+<br>- 2 tablespoons paprika
+<br>- 1 tablespoon ground cumin
+<br>- 1 teaspoon garlic powder
+<br>- 1 teaspoon onion powder
+<br>- 1/2 teaspoon salt
+<br>- 1/4 teaspoon black pepper
+<br>- Marinate the Meat: In a large bowl, combine the chicken, olive oil, lemon juice, paprika, cumin, garlic powder, onion powder, salt, and pepper. Mix well to coat the chicken evenly. Cover and refrigerate for at least 2 hours, or preferably overnight.
+<br>- Cook the Meat:
+   <br> - If using a vertical rotisserie, thread the chicken onto the skewer and cook according to the manufacturer's instructions.
+   <br> - Alternatively, you can cook the chicken in a large skillet or on a grill.
+<br>- Assemble the Shawarma:
+    <br>- Warm the pita bread.
+   <br> - Shave off thin slices of cooked chicken.
+    <br>- Place the chicken in the pita bread.
+   <br> - Top with tahini sauce, hummus, pickles, tomatoes, onions, and lettuce.
+   <br> - Add hot sauce to taste.
+                        </p>
+                
+                    </div>
+                    <div class = "meal-img">
+                        <img src = "/PNG/shawrma.jpeg" alt = "">
+                      </div>
+                      <div class = "meal-link">
+                        <a href="https://www.bing.com/ck/a?!&&p=9fba61c19f475a6702bb5e3b64ada646aeb673d7ae7882da2e707a20754d8e65JmltdHM9MTczNDU2NjQwMA&ptn=3&ver=2&hsh=4&fclid=17680e30-623f-61bf-1f58-1b7f6348602c&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9c2hhd3JtYXZpZGVvJm1pZD1GQjRBM0U3MDVGQkU0NkRBNERENkZCNEEzRTcwNUZCRTQ2REE0REQ2JkZPUk09VklSRQ&ntb=1" class="meal-link-btn" >Watch Video</a>
+                    </div>
+                </div>
+            </div> 
+            <div class = "nine-meal-detail" id="nine-meal-detail">
+                <!-- recipe close btn -->
+                <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn" onclick="closeBtn()">
+                    <i class ="fas fa-times"></i>
+                </button>
+
+                <!-- recipe details -->
+                <div class="meal-content">
+                    <h2 class="meal-name">Mahshi</h2>
+                    <div class="meal-about">
+                        <h3 class="meal-title-about">About Meal</h3>
+                        <p class="meal-descript-about">Stuffed vegetables, such as grape leaves, cabbage leaves, or zucchini, filled with a variety of fillings, such as rice, meat, or vegetables. They are a popular appetizer or side dish.
+                        </p>
+                    </div>
+                    <div class = "meal-instruct">
+                        <h3>Ingridients:</h3>
+                        <p>
+                            
+                          <br>  - For the Filling:
+                              <br>  - 1 cup long-grain rice
+                             <br>   - 1 pound ground beef or lamb
+                               <br> - 1 onion, finely chopped
+                               <br> - 2 cloves garlic, minced
+                                <br>- 1/2 cup chopped fresh parsley
+                               <br> - 1/4 cup chopped fresh mint
+                               <br> - 1 teaspoon ground cumin
+                               <br> - 1/2 teaspoon ground coriander
+                               <br> - Salt and pepper to taste
+                           <br> - For the Sauce:
+                            <br>    - 1 (28-ounce) can crushed tomatoes
+                             <br>   - 1 onion, chopped
+                              <br>  - 2 cloves garlic, minced
+                             <br>   - 1 tablespoon tomato paste
+                              <br>  - 1/2 teaspoon ground cumin
+                               <br> - 1/4 teaspoon ground coriander
+                               <br> - Salt and pepper to taste
+                         <br>   - Other Ingredients:
+                             <br>   - 1 pound grape leaves or cabbage leaves
+                              <br>  - 1 cup water
+                               <br> - Olive oil for frying   
+                        </p>
+                        <h3>Instruction:</h3>
+                        <p>
+                       
+<br>- Prepare the Filling:
+    <br>- In a large skillet, brown the ground meat over medium heat.
+   <br> - Add the chopped onion and garlic and cook until softened.
+   <br> - Stir in the rice, parsley, mint, cumin, coriander, salt, and pepper. Cook for a few minutes more, until the rice is lightly toasted.
+<br>- Prepare the Leaves:
+   <br> - If using grape leaves, blanch them in boiling water for a few minutes until softened. Drain and set aside.
+<br>- Stuff the Leaves:
+  <br>  - Place a grape leaf or cabbage leaf with the vein side down.
+   <br> - Add a spoonful of the filling to the center of the leaf.
+   <br> - Fold the sides of the leaf over the filling, then roll it up tightly.
+<br>- Make the Sauce:
+  <br>  - In a separate pot, combine the crushed tomatoes, chopped onion, garlic, tomato paste, cumin, coriander, salt, and pepper. Stir well.
+<br>- Simmer the Mahshi:
+   <br> - Arrange the stuffed leaves in a large pot. Pour the tomato sauce over the leaves, making sure they are mostly covered.
+   <br> - Add 1 cup of water to the pot.
+    <br>- Bring to a simmer over medium heat, then reduce heat to low, cover, and cook for 30-45 minutes, or until the leaves are tender and the rice is cooked through.
+<br>- Serve:
+   <br> - Serve the Mahshi hot, spooning some of the sauce over each leaf.
+
+                        </p>
+                
+                    </div>
+                    <div class = "meal-img">
+                        <img src = "/PNG/mahshi.jpeg" alt = "">
+                      </div>
+                      <div class = "meal-link">
+                        <a href="https://www.bing.com/ck/a?!&&p=93cccce8f82a4bc1153798347fc112104a934a6f149f467ceb5dfa77d6dfba4fJmltdHM9MTczNDU2NjQwMA&ptn=3&ver=2&hsh=4&fclid=17680e30-623f-61bf-1f58-1b7f6348602c&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9bWFoc2hpK3ZpZGVvJm1pZD1CQjIxRTIwQUM0M0QxQjk4OUYyNEJCMjFFMjBBQzQzRDFCOTg5RjI0JkZPUk09VklSRQ&ntb=1" class="meal-link-btn" >Watch Video</a>
+                    </div>
+                </div>
+            </div> 
+            <div class = "ten-meal-detail" id="ten-meal-detail">
+                <!-- recipe close btn -->
+                <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn" onclick="closeBtn()">
+                    <i class ="fas fa-times"></i>
+                </button>
+
+                <!-- recipe details -->
+                <div class="meal-content">
+                    <h2 class="meal-name">Baba ghanoush</h2>
+                    <div class="meal-about">
+                        <h3 class="meal-title-about">About Meal</h3>
+                        <p class="meal-descript-about">Baba ghanoush is a delicious and healthy Lebanese dish. It is a traditional appetizer made primarily from roasted eggplant, garlic, lemon juice, olive oil, and spices. It is characterized by its smoky flavor, smooth and creamy texture. Baba ghanoush is a popular cold appetizer and is usually served with Arabic bread or fresh vegetables.
+                        </p>
+                    </div>
+                    <div class = "meal-instruct">
+                        <h3>Ingridients:</h3>
+                        <p>
+                           
+                         <br>   - Eggplant: It is the main ingredient in baba ghanoush and is roasted until it becomes black and soft.
+                           <br> - Garlic: Adds a strong and distinctive flavor to the dish.
+                           <br> - Lemon juice: Gives baba ghanoush a refreshing acidity.
+                            <br>- Olive oil: Adds a rich flavor and a creamy texture.
+                         <br>   - Spices: Such as cumin, smoked paprika, salt, and black pepper.
+                       
+                        </p>
+                        <h3>Instruction:</h3>
+                        <p>
+                           
+                           <br> - Roast the eggplant: Roast the eggplant over an open fire or in the oven until it becomes black and soft.
+                          <br>  - Peel the eggplant: After roasting the eggplant, peel it and remove the seeds.
+                          <br>  - Mash the eggplant: Mash the eggplant well until it becomes smooth.
+                           <br> - Add other ingredients: Add minced garlic, lemon juice, olive oil, and spices to the mashed eggplant and mix the ingredients well.
+                          <br>  - Serving: Serve baba ghanoush cold with Arabic bread or fresh vegetables.
+                            
+                        </p>
+                
+                    </div>
+                    <div class = "meal-img">
+                        <img src = "/PNG/baba khanoug.jpeg" alt = "">
+                      </div>
+                      <div class = "meal-link">
+                        <a href="https://www.bing.com/ck/a?!&&p=a88ebb71e06b3c2af4bea1745e31da1315577d5c67748b97f3156c92ccdd840eJmltdHM9MTczNDU2NjQwMA&ptn=3&ver=2&hsh=4&fclid=17680e30-623f-61bf-1f58-1b7f6348602c&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9YmFiYStraGFub2d2Zm9vZCt2aWRvZXZvJm1pZD1FQTYwNkNFREQ4MjQ0QjY4MjlDQ0VBNjA2Q0VERDgyNDRCNjgyOUNDJkZPUk09VklSRQ&ntb=1" class="meal-link-btn" >Watch Video</a>
+                    </div>
+                </div>
+            </div> 
+            <div class = "eleven-meal-detail" id="four-meal-detail">
+                <!-- recipe close btn -->
+                <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn" onclick="closeBtn()">
+                    <i class ="fas fa-times"></i>
+                </button>
+
+                <!-- recipe details -->
+                <div class="meal-content">
+                    <h2 class="meal-name">Um Ali</h2>
+                    <div class="meal-about">
+                        <h3 class="meal-title-about">About Meal</h3>
+                        <p class="meal-descript-about">Umm Ali is a rich and decadent Egyptian dessert that's similar to bread pudding. It's made with layers of flaky pastry, milk, cream, sugar, nuts, and raisins.
+                        </p>
+                    </div>
+                    <div class = "meal-instruct">
+                        <h3>Ingridients:</h3>
+                        <p>Ingredients:
+
+                        <br>   - 1 (17.5 ounce) package frozen puff pastry sheets, thawed
+                          <br>  - ½ cup chopped walnuts
+                           <br> - 1 cup chopped pecans
+                           <br> - 1 cup chopped hazelnuts
+                          <br>  - 1 cup raisins
+                           <br> - 1 cup flaked coconut
+                           <br> - 1 ¼ cups white sugar, divided
+                           <br> - 4 cups milk
+                        
+                        </p>
+                        <h3>Instruction:</h3>
+                        <p>
+                          <br>  - Preheat oven to 350°F (175°C).
+                           <br> - Cut the puff pastry sheets into small pieces.
+                           <br> - Layer the pastry pieces in a baking dish.
+                           <br> - Pour milk, ¾ cup sugar, and vanilla extract over the pastry.
+                           <br> - Sprinkle with nuts, raisins, and coconut.
+                           <br> - Bake for 30-40 minutes, or until the custard is set and the top is golden brown.
+                            <br>- Let cool slightly before serving.
+                
+                        </p>
+                
+                    </div>
+                    <div class = "meal-img">
+                        <img src = "/PNG/umm ali.jpeg " alt = "">
+                      </div>
+                      <div class = "meal-link">
+                        <a href="https://www.bing.com/ck/a?!&&p=16673ec12608052422b1d98cb34169f216e094cadb3915755e66c2810919fc85JmltdHM9MTczNDU2NjQwMA&ptn=3&ver=2&hsh=4&fclid=17680e30-623f-61bf-1f58-1b7f6348602c&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9dW1tK2FsaSsrZm9vZCt2aWRlbyZtaWQ9NDgwRjBGQjJEMDZGMTQxN0E3RDU0ODBGMEZCMkQwNkYxNDE3QTdENSZGT1JNPVZJUkU&ntb=1" class="meal-link-btn" >Watch Video</a>
+                    </div>
+                </div>
+            </div> 
+            
+            
+        </div>
+            <!--Ending of Recipe Details-->
+<!--Script for Javascript-->
+<script src="/assests/Recipes.js"></script>
+</body>
+</html>

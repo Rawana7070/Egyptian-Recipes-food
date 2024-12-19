@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Discover delicious recipes with our easy-to-use recipe website. Find meals for every taste, including vegetarian, gluten-free, quick meals, and more.">
+    <meta name="keywords" content="recipes, cooking, vegetarian, gluten-free, quick meals, healthy recipes, desserts">
+    <meta name="author" content="Rawan Nabil">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="/assests/style.css">
+
+    <!-- Js Link -->
+    <script type="module" src="/assests/app.js" defer></script>
+    <script type="module" src="/assests/index.js" defer></script>
+
+    <title>Egyptian Recipe Website</title>
+
+</head>
+
+<body data-page="index">
+    
+    <!-- ---------- Header Start ---------- -->
+    <header class="header" data-header>
+
+        <div class="container">
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <span>Egyptian Recipes</span>
+            </a>
+
+            <div class="header__nav-menu">
+
+                <div class="header__content">
+                    <div class="header__actions">
+
+                        <div class="header__actions-wrapper">
+                            <div class="profile">
+                                
+                            </div>
+
+                            <div class="bookmark">
+                                
+                                <svg width="25px" height="25px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.507 19.853V6.034C18.5116 5.49905 18.3034 4.98422 17.9283 4.60277C17.5532 4.22131 17.042 4.00449 16.507 4H8.50705C7.9721 4.00449 7.46085 4.22131 7.08577 4.60277C6.7107 4.98422 6.50252 5.49905 6.50705 6.034V19.853C6.45951 20.252 6.65541 20.6407 7.00441 20.8399C7.35342 21.039 7.78773 21.0099 8.10705 20.766L11.907 17.485C12.2496 17.1758 12.7705 17.1758 13.113 17.485L16.9071 20.767C17.2265 21.0111 17.6611 21.0402 18.0102 20.8407C18.3593 20.6413 18.5551 20.2522 18.507 19.853Z" stroke="#395733" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span class="bookmark__label">Bookmark</span>
+                            </div>
+                            <div class="add-recipe">
+                                
+                                <svg width="30px" height="30px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7 5.12758L19.266 6.37458C19.4172 6.51691 19.5025 6.71571 19.5013 6.92339C19.5002 7.13106 19.4128 7.32892 19.26 7.46958L18.07 8.89358L14.021 13.7226C13.9501 13.8037 13.8558 13.8607 13.751 13.8856L11.651 14.3616C11.3755 14.3754 11.1356 14.1751 11.1 13.9016V11.7436C11.1071 11.6395 11.149 11.5409 11.219 11.4636L15.193 6.97058L16.557 5.34158C16.8268 4.98786 17.3204 4.89545 17.7 5.12758Z" stroke="#395733" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.033 7.61865C12.4472 7.61865 12.783 7.28287 12.783 6.86865C12.783 6.45444 12.4472 6.11865 12.033 6.11865V7.61865ZM9.23301 6.86865V6.11865L9.23121 6.11865L9.23301 6.86865ZM5.50001 10.6187H6.25001L6.25001 10.617L5.50001 10.6187ZM5.50001 16.2437L6.25001 16.2453V16.2437H5.50001ZM9.23301 19.9937L9.23121 20.7437H9.23301V19.9937ZM14.833 19.9937V20.7437L14.8348 20.7437L14.833 19.9937ZM18.566 16.2437H17.816L17.816 16.2453L18.566 16.2437ZM19.316 12.4937C19.316 12.0794 18.9802 11.7437 18.566 11.7437C18.1518 11.7437 17.816 12.0794 17.816 12.4937H19.316ZM15.8863 6.68446C15.7282 6.30159 15.2897 6.11934 14.9068 6.2774C14.5239 6.43546 14.3417 6.87397 14.4998 7.25684L15.8863 6.68446ZM18.2319 9.62197C18.6363 9.53257 18.8917 9.13222 18.8023 8.72777C18.7129 8.32332 18.3126 8.06792 17.9081 8.15733L18.2319 9.62197ZM8.30001 16.4317C7.8858 16.4317 7.55001 16.7674 7.55001 17.1817C7.55001 17.5959 7.8858 17.9317 8.30001 17.9317V16.4317ZM15.767 17.9317C16.1812 17.9317 16.517 17.5959 16.517 17.1817C16.517 16.7674 16.1812 16.4317 15.767 16.4317V17.9317ZM12.033 6.11865H9.23301V7.61865H12.033V6.11865ZM9.23121 6.11865C6.75081 6.12461 4.7447 8.13986 4.75001 10.6203L6.25001 10.617C6.24647 8.96492 7.58269 7.62262 9.23481 7.61865L9.23121 6.11865ZM4.75001 10.6187V16.2437H6.25001V10.6187H4.75001ZM4.75001 16.242C4.7447 18.7224 6.75081 20.7377 9.23121 20.7437L9.23481 19.2437C7.58269 19.2397 6.24647 17.8974 6.25001 16.2453L4.75001 16.242ZM9.23301 20.7437H14.833V19.2437H9.23301V20.7437ZM14.8348 20.7437C17.3152 20.7377 19.3213 18.7224 19.316 16.242L17.816 16.2453C17.8195 17.8974 16.4833 19.2397 14.8312 19.2437L14.8348 20.7437ZM19.316 16.2437V12.4937H17.816V16.2437H19.316ZM14.4998 7.25684C14.6947 7.72897 15.0923 8.39815 15.6866 8.91521C16.2944 9.44412 17.1679 9.85718 18.2319 9.62197L17.9081 8.15733C17.4431 8.26012 17.0391 8.10369 16.6712 7.7836C16.2897 7.45165 16.0134 6.99233 15.8863 6.68446L14.4998 7.25684ZM8.30001 17.9317H15.767V16.4317H8.30001V17.9317Z" fill="#395733"/>
+                                    </svg>
+                                    <span class="add-recipe__label">Add Recipe</span>
+                            </div>
+    
+                        </div>
+                        <div class="dropdown_wrapper hide">
+                            <ul>
+                                <li><svg width="22px" height="22px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.25 7.75C15.25 9.26878 14.0188 10.5 12.5 10.5C10.9812 10.5 9.75 9.26878 9.75 7.75C9.75 6.23122 10.9812 5 12.5 5C14.0188 5 15.25 6.23122 15.25 7.75Z" stroke="#395733" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.74967 15.7338C7.73738 15.3197 7.39179 14.994 6.97775 15.0063C6.56372 15.0186 6.23804 15.3642 6.25033 15.7782L7.74967 15.7338ZM10.385 18.95V18.2C10.3779 18.2 10.3708 18.2001 10.3637 18.2003L10.385 18.95ZM14.615 18.95L14.6363 18.2003C14.6292 18.2001 14.6221 18.2 14.615 18.2V18.95ZM18.7497 15.7782C18.762 15.3642 18.4363 15.0186 18.0222 15.0063C17.6082 14.994 17.2626 15.3197 17.2503 15.7338L18.7497 15.7782ZM17.2503 15.6332C17.2626 16.0473 17.6082 16.373 18.0222 16.3607C18.4363 16.3484 18.762 16.0028 18.7497 15.5888L17.2503 15.6332ZM14.615 12.417V13.167C14.6221 13.167 14.6292 13.1669 14.6363 13.1667L14.615 12.417ZM10.385 12.417L10.3637 13.1667C10.3708 13.1669 10.3779 13.167 10.385 13.167V12.417ZM6.25033 15.5888C6.23804 16.0028 6.56372 16.3484 6.97775 16.3607C7.39179 16.373 7.73738 16.0473 7.74967 15.6332L6.25033 15.5888ZM6.25033 15.7782C6.3165 18.0081 8.17632 19.763 10.4063 19.6997L10.3637 18.2003C8.9611 18.2401 7.79129 17.1363 7.74967 15.7338L6.25033 15.7782ZM10.385 19.7H14.615V18.2H10.385V19.7ZM14.5937 19.6997C16.8237 19.763 18.6835 18.0081 18.7497 15.7782L17.2503 15.7338C17.2087 17.1363 16.0389 18.2401 14.6363 18.2003L14.5937 19.6997ZM18.7497 15.5888C18.6835 13.3589 16.8237 11.604 14.5937 11.6673L14.6363 13.1667C16.0389 13.1269 17.2087 14.2307 17.2503 15.6332L18.7497 15.5888ZM14.615 11.667H10.385V13.167H14.615V11.667ZM10.4063 11.6673C8.17632 11.604 6.3165 13.3589 6.25033 15.5888L7.74967 15.6332C7.79129 14.2307 8.9611 13.1269 10.3637 13.1667L10.4063 11.6673Z" fill="#395733"/>
+                                </svg>My Profile</li>
+                                <li><svg width="22px" height="22px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7 5.12758L19.266 6.37458C19.4172 6.51691 19.5025 6.71571 19.5013 6.92339C19.5002 7.13106 19.4128 7.32892 19.26 7.46958L18.07 8.89358L14.021 13.7226C13.9501 13.8037 13.8558 13.8607 13.751 13.8856L11.651 14.3616C11.3755 14.3754 11.1356 14.1751 11.1 13.9016V11.7436C11.1071 11.6395 11.149 11.5409 11.219 11.4636L15.193 6.97058L16.557 5.34158C16.8268 4.98786 17.3204 4.89545 17.7 5.12758Z" stroke="#395733" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.033 7.61865C12.4472 7.61865 12.783 7.28287 12.783 6.86865C12.783 6.45444 12.4472 6.11865 12.033 6.11865V7.61865ZM9.23301 6.86865V6.11865L9.23121 6.11865L9.23301 6.86865ZM5.50001 10.6187H6.25001L6.25001 10.617L5.50001 10.6187ZM5.50001 16.2437L6.25001 16.2453V16.2437H5.50001ZM9.23301 19.9937L9.23121 20.7437H9.23301V19.9937ZM14.833 19.9937V20.7437L14.8348 20.7437L14.833 19.9937ZM18.566 16.2437H17.816L17.816 16.2453L18.566 16.2437ZM19.316 12.4937C19.316 12.0794 18.9802 11.7437 18.566 11.7437C18.1518 11.7437 17.816 12.0794 17.816 12.4937H19.316ZM15.8863 6.68446C15.7282 6.30159 15.2897 6.11934 14.9068 6.2774C14.5239 6.43546 14.3417 6.87397 14.4998 7.25684L15.8863 6.68446ZM18.2319 9.62197C18.6363 9.53257 18.8917 9.13222 18.8023 8.72777C18.7129 8.32332 18.3126 8.06792 17.9081 8.15733L18.2319 9.62197ZM8.30001 16.4317C7.8858 16.4317 7.55001 16.7674 7.55001 17.1817C7.55001 17.5959 7.8858 17.9317 8.30001 17.9317V16.4317ZM15.767 17.9317C16.1812 17.9317 16.517 17.5959 16.517 17.1817C16.517 16.7674 16.1812 16.4317 15.767 16.4317V17.9317ZM12.033 6.11865H9.23301V7.61865H12.033V6.11865ZM9.23121 6.11865C6.75081 6.12461 4.7447 8.13986 4.75001 10.6203L6.25001 10.617C6.24647 8.96492 7.58269 7.62262 9.23481 7.61865L9.23121 6.11865ZM4.75001 10.6187V16.2437H6.25001V10.6187H4.75001ZM4.75001 16.242C4.7447 18.7224 6.75081 20.7377 9.23121 20.7437L9.23481 19.2437C7.58269 19.2397 6.24647 17.8974 6.25001 16.2453L4.75001 16.242ZM9.23301 20.7437H14.833V19.2437H9.23301V20.7437ZM14.8348 20.7437C17.3152 20.7377 19.3213 18.7224 19.316 16.242L17.816 16.2453C17.8195 17.8974 16.4833 19.2397 14.8312 19.2437L14.8348 20.7437ZM19.316 16.2437V12.4937H17.816V16.2437H19.316ZM14.4998 7.25684C14.6947 7.72897 15.0923 8.39815 15.6866 8.91521C16.2944 9.44412 17.1679 9.85718 18.2319 9.62197L17.9081 8.15733C17.4431 8.26012 17.0391 8.10369 16.6712 7.7836C16.2897 7.45165 16.0134 6.99233 15.8863 6.68446L14.4998 7.25684ZM8.30001 17.9317H15.767V16.4317H8.30001V17.9317Z" fill="#395733"/>
+                                    </svg>My Recipes</li>
+                                <li><svg width="20px" height="20px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.507 19.853V6.034C18.5116 5.49905 18.3034 4.98422 17.9283 4.60277C17.5532 4.22131 17.042 4.00449 16.507 4H8.50705C7.9721 4.00449 7.46085 4.22131 7.08577 4.60277C6.7107 4.98422 6.50252 5.49905 6.50705 6.034V19.853C6.45951 20.252 6.65541 20.6407 7.00441 20.8399C7.35342 21.039 7.78773 21.0099 8.10705 20.766L11.907 17.485C12.2496 17.1758 12.7705 17.1758 13.113 17.485L16.9071 20.767C17.2265 21.0111 17.6611 21.0402 18.0102 20.8407C18.3593 20.6413 18.5551 20.2522 18.507 19.853Z" stroke="#395733" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>Bookmark</li>
+
+                                    <li><svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0175 19C10.6601 19 10.3552 18.7347 10.297 18.373C10.2434 18.0804 10.038 17.8413 9.76171 17.75C9.53658 17.6707 9.31645 17.5772 9.10261 17.47C8.84815 17.3365 8.54289 17.3565 8.30701 17.522C8.02156 17.7325 7.62943 17.6999 7.38076 17.445L6.41356 16.453C6.15326 16.186 6.11944 15.7651 6.33361 15.458C6.49878 15.2105 6.52257 14.8914 6.39601 14.621C6.31262 14.4332 6.23906 14.2409 6.17566 14.045C6.08485 13.7363 5.8342 13.5051 5.52533 13.445C5.15287 13.384 4.8779 13.0559 4.87501 12.669V11.428C4.87303 10.9821 5.18705 10.6007 5.61601 10.528C5.94143 10.4645 6.21316 10.2359 6.33751 9.921C6.37456 9.83233 6.41356 9.74433 6.45451 9.657C6.61989 9.33044 6.59705 8.93711 6.39503 8.633C6.1424 8.27288 6.18119 7.77809 6.48668 7.464L7.19746 6.735C7.54802 6.37532 8.1009 6.32877 8.50396 6.625L8.52638 6.641C8.82735 6.84876 9.21033 6.88639 9.54428 6.741C9.90155 6.60911 10.1649 6.29424 10.2375 5.912L10.2473 5.878C10.3275 5.37197 10.7536 5.00021 11.2535 5H12.1115C12.6248 4.99976 13.0629 5.38057 13.1469 5.9L13.1625 5.97C13.2314 6.33617 13.4811 6.63922 13.8216 6.77C14.1498 6.91447 14.5272 6.87674 14.822 6.67L14.8707 6.634C15.2842 6.32834 15.8528 6.37535 16.2133 6.745L16.8675 7.417C17.1954 7.75516 17.2366 8.28693 16.965 8.674C16.7522 8.99752 16.7251 9.41325 16.8938 9.763L16.9358 9.863C17.0724 10.2045 17.3681 10.452 17.7216 10.521C18.1837 10.5983 18.5235 11.0069 18.525 11.487V12.6C18.5249 13.0234 18.2263 13.3846 17.8191 13.454C17.4842 13.5199 17.2114 13.7686 17.1083 14.102C17.0628 14.2353 17.0121 14.3687 16.9562 14.502C16.8261 14.795 16.855 15.1364 17.0323 15.402C17.2662 15.7358 17.2299 16.1943 16.9465 16.485L16.0388 17.417C15.7792 17.6832 15.3698 17.7175 15.0716 17.498C14.8226 17.3235 14.5001 17.3043 14.2331 17.448C14.0428 17.5447 13.8475 17.6305 13.6481 17.705C13.3692 17.8037 13.1636 18.0485 13.1099 18.346C13.053 18.7203 12.7401 18.9972 12.3708 19H11.0175Z" stroke="#395733" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9747 12C13.9747 13.2885 12.9563 14.333 11.7 14.333C10.4437 14.333 9.42533 13.2885 9.42533 12C9.42533 10.7115 10.4437 9.66699 11.7 9.66699C12.9563 9.66699 13.9747 10.7115 13.9747 12Z" stroke="#395733" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>Setting</li>
+                            </ul>
+                            <div class="sign-out-btn">
+                                <button class="btn">
+                                    Sign out
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Toggle -->
+                        <div class="nav-toggle">
+                            <button class="nav-toggle-btn open-menu" aria-label="toggle menu" data-nav-toggler> 
+                                <svg width="30px" height="30px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.5 11.75C6.08579 11.75 5.75 12.0858 5.75 12.5C5.75 12.9142 6.08579 13.25 6.5 13.25V11.75ZM18.5 13.25C18.9142 13.25 19.25 12.9142 19.25 12.5C19.25 12.0858 18.9142 11.75 18.5 11.75V13.25ZM6.5 15.75C6.08579 15.75 5.75 16.0858 5.75 16.5C5.75 16.9142 6.08579 17.25 6.5 17.25V15.75ZM18.5 17.25C18.9142 17.25 19.25 16.9142 19.25 16.5C19.25 16.0858 18.9142 15.75 18.5 15.75V17.25ZM6.5 7.75C6.08579 7.75 5.75 8.08579 5.75 8.5C5.75 8.91421 6.08579 9.25 6.5 9.25V7.75ZM18.5 9.25C18.9142 9.25 19.25 8.91421 19.25 8.5C19.25 8.08579 18.9142 7.75 18.5 7.75V9.25ZM6.5 13.25H18.5V11.75H6.5V13.25ZM6.5 17.25H18.5V15.75H6.5V17.25ZM6.5 9.25H18.5V7.75H6.5V9.25Z" fill="#000000"/>
+                                    </svg>
+                            </button>
+            
+            
+                            <button class="nav-toggle-btn close-menu" aria-label="toggle menu" data-nav-toggler>
+                                <svg width="30px" height="30px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.96967 16.4697C6.67678 16.7626 6.67678 17.2374 6.96967 17.5303C7.26256 17.8232 7.73744 17.8232 8.03033 17.5303L6.96967 16.4697ZM13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697L13.0303 12.5303ZM11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303L11.9697 11.4697ZM18.0303 7.53033C18.3232 7.23744 18.3232 6.76256 18.0303 6.46967C17.7374 6.17678 17.2626 6.17678 16.9697 6.46967L18.0303 7.53033ZM13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303L13.0303 11.4697ZM16.9697 17.5303C17.2626 17.8232 17.7374 17.8232 18.0303 17.5303C18.3232 17.2374 18.3232 16.7626 18.0303 16.4697L16.9697 17.5303ZM11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697L11.9697 12.5303ZM8.03033 6.46967C7.73744 6.17678 7.26256 6.17678 6.96967 6.46967C6.67678 6.76256 6.67678 7.23744 6.96967 7.53033L8.03033 6.46967ZM8.03033 17.5303L13.0303 12.5303L11.9697 11.4697L6.96967 16.4697L8.03033 17.5303ZM13.0303 12.5303L18.0303 7.53033L16.9697 6.46967L11.9697 11.4697L13.0303 12.5303ZM11.9697 12.5303L16.9697 17.5303L18.0303 16.4697L13.0303 11.4697L11.9697 12.5303ZM13.0303 11.4697L8.03033 6.46967L6.96967 7.53033L11.9697 12.5303L13.0303 11.4697Z" fill="#000000"/>
+                                    </svg>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                <nav class="navbar" data-navbar>
+
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a href="/" id="home" class="hover-underline active" >
+                                <span class="span">Home</span>
+                            </a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="/Recipes.html" class="hover-underline" >
+                                <span class="span">Recipes</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                        
+            </div>           
+
+        </div>
+
+    </header> <!-- ========== Header End ========== -->
+
+    <main>
+        <div class="overlay" data-overlay data-nav-toggler ></div>
+
+        <div class="container">
+
+            <!-- ---------- Hero Start ---------- -->
+            <section class="hero text-center" aria-label="home" id="home">
+        
+                <ul data-hero-slider >
+        
+                    <li class="slider-item active" data-hero-slider-item>
+        
+                        <div class="slider-bg">
+                            <img src="./images/slider/slider-img-2.jpg" alt="" class="img-cover" width="1880" height="950">
+                        </div>
+        
+                        <div class="content-wrapper glass-bg">
+        
+                            <p class="subtitle subtitle--section slider-reveal">HI THERE </p>
+            
+                            <h2 class="hero-title slider-reveal">Taste the Egyptian Culture</h2>
+            
+                            <p class="hero-text slider-reveal">Experience the vibrant flavors of Egypt! From savory tagines to sweet baklava, Egyptian cuisine offers a unique blend of spices and textures. Discover a culinary journey filled with history and culture.</p>
+            
+                            <a href="#" class="btn btn-primary slider-reveal">
+                                <span class="text text-1">Explore Recipes</span>
+                                <span class="text text-2" aria-hidden="true">Explore Recipes</span>
+                            </a>
+                        </div>
+        
+                    </li>
+        
+                    <li class="slider-item" data-hero-slider-item>
+        
+                        <div class="slider-bg">
+                            <img src="./images/slider/slider-img-1.jpg" alt="" class="img-cover" width="1880" height="950">
+                        </div>
+        
+                        <div class="content-wrapper glass-bg">
+                            <p class="subtitle subtitle--section slider-reveal">Healthy & Vibrant</p>
+            
+                            <h2 class="hero-title slider-reveal">Refreshing Salad Ideas</h2>
+            
+                            <p class="hero-text slider-reveal">Enjoy a variety of crisp, colorful, and nutritious salads for every occasion.</p>
+        
+                            <a href="#" class="btn btn-primary slider-reveal">
+                                <span class="text text-1">Try Salads</span>
+                                <span class="text text-2" aria-hidden="true">Try Salads</span>
+                            </a>
+        
+                        </div>
+        
+                    </li>
+        
+                    <li class="slider-item" data-hero-slider-item>
+        
+                        <div class="slider-bg">
+                            <img src="./images/slider/slider-img-3.jpg" alt="" class="img-cover" width="1880" height="950">
+                        </div>
+        
+                        <div class="content-wrapper glass-bg">
+        
+                            <p class="subtitle subtitle--section slider-reveal">Fresh & Flavorful</p>
+            
+                            <h2 class="hero-title slider-reveal">Handmade Pasta Recipes</h2>
+            
+                            <p class="hero-text slider-reveal">Discover the secrets to crafting authentic pasta dishes with fresh ingredients.</p>
+            
+                            <a href="#" class="btn btn-primary slider-reveal">
+                                <span class="text text-1">Explore Pasta</span>
+                                <span class="text text-2" aria-hidden="true">Explore Pasta</span>
+                            </a>
+        
+                        </div>
+        
+                    </li>
+                </ul>
+        
+                <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 12H17M7 12L11 8M7 12L11 16M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+        
+                <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 12H7M17 12L13 16M17 12L13 8M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                </button>
+        
+                <!-- <a href="#" class="hero-btn has-after">
+                    <img src="./images/icon-all.png" alt="" width="48" height="48" >
+                    <span class="subtitle text-center span">All Recipes</span>
+                </a> -->
+        
+            </section> <!-- ========== Hero End ========== -->
+        
+            <!-- ---------- Meal Options Start ---------- -->
+            <section class="section meal-options text-center">
+           
+                <!-- Headers -->
+                <header class="meal-options-header">
+                    <p class="subtitle subtitle--section meal-options-subtitle">Choose Your Preferences</p>
+                    <h2 class="meal-options-title">Find the Perfect Recipe</h2>
+                </header>
+        
+                <div class="meal-options-container">
+    
+                    <!-- Option 1: Diet -->
+                    <div class="meal-option">
+        
+                        <h2 class="meal-option-title">Diet</h2>
+        
+                        <ul class="meal-option-list meal-option--diet ">
+                            <li class="meal-item">
+                                <div class="meal-icon-wrapper">
+                                    <img src="/PNG/Vegan.png" alt="Vegan Icon" class="meal-icon">
+                                </div>
+                                <a href="#" class="meal-link">
+                                    <h3 class="meal-text">Vegen</h3>
+                                </a>
+                            </li>
+            
+                            <li class="meal-item">
+                                <div class="meal-icon-wrapper">
+                                    <img src="/PNG/vegetrian.png" alt="Vegetarian Icon" class="meal-icon">
+                                </div>
+                                <a href="#" class="meal-link">
+                                    <h3 class="meal-text">Vegetarian</h3>
+                                </a>
+                            </li>
+            
+                            <li class="meal-item">
+                                <div class="meal-icon-wrapper">
+                                    <img src="/PNG/all food.png" alt="All Diets Icon" class="meal-icon">
+                                </div>
+                                <a href="#" class="meal-link">
+                                    <h3 class="meal-text">All</h3>
+                                </a>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                    
+        
+                    <!-- Option 2: Meal Time -->
+        
+                    <div class="meal-option">
+        
+                        <h2 class="meal-option-title">Meal Time</h2>
+        
+                        <ul class="meal-option-list meal-option--time ">
+            
+                            <li class="meal-item">
+                                <div class="meal-icon-wrapper">
+                                    <img src="/PNG/breakfast.png" alt="Breakfast Icon" class="meal-icon">
+                                </div>
+                                <a href="#" class="meal-link">
+                                    <h3 class="meal-text">Breakfast</h3>
+                                </a>
+                            </li>
+            
+                            <li class="meal-item">
+                                <div class="meal-icon-wrapper">
+                                    <img src="/PNG/launch.png" alt="Lunch Icon" class="meal-icon">
+                                </div>
+                                <a href="#" class="meal-link">
+                                    <h3 class="meal-text">Lunch</h3>
+                                </a>
+                            </li>
+            
+                            <li class="meal-item">
+                                <div class="meal-icon-wrapper">
+                                    <img src="/PNG/dinner.png" alt="Dinner Icon" class="meal-icon">
+                                </div>
+                                <a href="#" class="meal-link">
+                                    <h3 class="meal-text">Dinner</h3>
+                                </a>
+                            </li>
+            
+                        </ul>
+                    </div>
+                    
+                    <!-- Option 3: Type -->
+                    <div class="meal-option">
+                        
+                        <h2 class="meal-option-title">Type</h2>
+        
+                        <ul class="meal-option-list meal-option--type ">
+        
+                            <li class="meal-item">
+                                <div class="meal-icon-wrapper">
+                                    <img src="/PNG/under30 min.png" alt="Under 30 Minutes Icon" class="meal-icon">
+                                </div>
+                                <a href="#" class="meal-link">
+                                    <h3 class="meal-text">Under 30 Min</h3>
+                                </a>
+                                
+                            </li>
+            
+                            <li class="meal-item">
+            
+                                <div class="meal-icon-wrapper">
+                                    <img src="/PNG/for children food.png" alt="For Children Icon" class="meal-icon">
+                                </div>
+                                <a href="#" class="meal-link">
+                                    <h3 class="meal-text">For Children</h3>
+                                </a>
+                                
+                            </li>
+            
+                            <li class="meal-item">
+                                <div class="meal-icon-wrapper">
+                                    <img src="/PNG/comfort food.png" alt="Comfort Food Icon" class="meal-icon">
+                                </div>
+                                <a href="#" class="meal-link">
+                                    <h3 class="meal-text">Comfort Food</h3>
+                                </a>
+                                
+                            </li>
+            
+                        </ul>
+                    </div>
+                    
+                </div>
+              
+            </section> <!-- ========== Meal Options End ========== -->
+        
+        
+            <!-- ---------- Latest Recipe Slider Start ---------- -->
+            <section class="section text-center latest-recipes-section">
+        
+                    <!-- Headers -->
+                    <header class="latest-recipes-header">
+                        <p class="subtitle subtitle--section">Fresh from the Kitchen</p>
+                        <h2 class="title--section" >Discover New Dishes</h2>
+                    </header>
+            
+                    <ul class="slider recipe-list">
+            
+                        <!-- <li class="recipe-list-item">
+            
+                            <div class="recipe-tag">
+                                <span>Kid-Friendly</span>
+                            </div>
+            
+                            <article class="recipe-card card">
+                
+                                <figure class="card-media card-img-holder">
+                                    <img 
+                                        src="./images/recipe/recipe-1.jpg"
+                                        alt=""  
+                                        height="200" 
+                                        width="200"
+                                        loading="lazy" 
+                                        class="img-cover">
+                                </figure>
+                
+                                <div class="recipe-card-content card-content">
+            
+                                    <h3 class="card-title">
+                                        <a href="http://127.0.0.1:5500/detail.html#5ed6604591c37cdc054bc886" class="card-link text-limited">Quick & Easy Breakfast</a>
+                                    </h3>
+    
+                                    <div class="recipe-card-meta card-meta-wrapper">
+                                        <div class="recipe-meta-item meta-item">
+                                            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.525 13.5C18.525 17.366 15.4693 20.5 11.7 20.5C7.93066 20.5 4.875 17.366 4.875 13.5C4.875 9.63401 7.93066 6.5 11.7 6.5C13.5101 6.5 15.2461 7.2375 16.526 8.55025C17.8059 9.86301 18.525 11.6435 18.525 13.5Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.675 13.965C12.675 14.7934 12.0202 15.465 11.2125 15.465C10.4048 15.465 9.75 14.7934 9.75 13.965C9.75 13.1365 10.4048 12.465 11.2125 12.465C12.0202 12.465 12.675 13.1365 12.675 13.965Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10.95 6.5C10.95 6.91421 11.2858 7.25 11.7 7.25C12.1142 7.25 12.45 6.91421 12.45 6.5H10.95ZM12.45 3.5C12.45 3.08579 12.1142 2.75 11.7 2.75C11.2858 2.75 10.95 3.08579 10.95 3.5H12.45ZM15.1279 11.0236C15.417 10.727 15.411 10.2522 15.1145 9.963C14.8179 9.67384 14.343 9.67985 14.0539 9.97642L15.1279 11.0236ZM11.7139 12.3764C11.4247 12.673 11.4307 13.1478 11.7273 13.437C12.0239 13.7262 12.4987 13.7202 12.7879 13.4236L11.7139 12.3764ZM13.65 4.25C14.0642 4.25 14.4 3.91421 14.4 3.5C14.4 3.08579 14.0642 2.75 13.65 2.75V4.25ZM9.75 2.75C9.33579 2.75 9 3.08579 9 3.5C9 3.91421 9.33579 4.25 9.75 4.25V2.75ZM19.0863 6.89748C19.361 6.58751 19.3325 6.11349 19.0225 5.83874C18.7125 5.56399 18.2385 5.59254 17.9637 5.90252L19.0863 6.89748ZM16.0137 8.10252C15.739 8.41249 15.7675 8.88651 16.0775 9.16126C16.3875 9.43601 16.8615 9.40746 17.1363 9.09748L16.0137 8.10252ZM5.412 5.87642C5.12284 5.57985 4.648 5.57384 4.35142 5.863C4.05485 6.15216 4.04884 6.627 4.338 6.92358L5.412 5.87642ZM6.3855 9.02358C6.67466 9.32015 7.1495 9.32616 7.44608 9.037C7.74265 8.74784 7.74866 8.273 7.4595 7.97642L6.3855 9.02358ZM12.45 6.5V3.5H10.95V6.5H12.45ZM14.0539 9.97642L11.7139 12.3764L12.7879 13.4236L15.1279 11.0236L14.0539 9.97642ZM13.65 2.75H9.75V4.25H13.65V2.75ZM17.9637 5.90252L16.0137 8.10252L17.1363 9.09748L19.0863 6.89748L17.9637 5.90252ZM4.338 6.92358L6.3855 9.02358L7.4595 7.97642L5.412 5.87642L4.338 6.92358Z" fill="#000000"/>
+                                            </svg>
+                                            <span class="subtitle">2 Minutes</span>
+                                        </div>
+                
+                                        <div class="recipe-meta-item meta-item">
+                                            <svg width="20px" height="20px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.25 7.75C15.25 9.26878 14.0188 10.5 12.5 10.5C10.9812 10.5 9.75 9.26878 9.75 7.75C9.75 6.23122 10.9812 5 12.5 5C14.0188 5 15.25 6.23122 15.25 7.75Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M7.74967 15.7338C7.73738 15.3197 7.39179 14.994 6.97775 15.0063C6.56372 15.0186 6.23804 15.3642 6.25033 15.7782L7.74967 15.7338ZM10.385 18.95V18.2C10.3779 18.2 10.3708 18.2001 10.3637 18.2003L10.385 18.95ZM14.615 18.95L14.6363 18.2003C14.6292 18.2001 14.6221 18.2 14.615 18.2V18.95ZM18.7497 15.7782C18.762 15.3642 18.4363 15.0186 18.0222 15.0063C17.6082 14.994 17.2626 15.3197 17.2503 15.7338L18.7497 15.7782ZM17.2503 15.6332C17.2626 16.0473 17.6082 16.373 18.0222 16.3607C18.4363 16.3484 18.762 16.0028 18.7497 15.5888L17.2503 15.6332ZM14.615 12.417V13.167C14.6221 13.167 14.6292 13.1669 14.6363 13.1667L14.615 12.417ZM10.385 12.417L10.3637 13.1667C10.3708 13.1669 10.3779 13.167 10.385 13.167V12.417ZM6.25033 15.5888C6.23804 16.0028 6.56372 16.3484 6.97775 16.3607C7.39179 16.373 7.73738 16.0473 7.74967 15.6332L6.25033 15.5888ZM6.25033 15.7782C6.3165 18.0081 8.17632 19.763 10.4063 19.6997L10.3637 18.2003C8.9611 18.2401 7.79129 17.1363 7.74967 15.7338L6.25033 15.7782ZM10.385 19.7H14.615V18.2H10.385V19.7ZM14.5937 19.6997C16.8237 19.763 18.6835 18.0081 18.7497 15.7782L17.2503 15.7338C17.2087 17.1363 16.0389 18.2401 14.6363 18.2003L14.5937 19.6997ZM18.7497 15.5888C18.6835 13.3589 16.8237 11.604 14.5937 11.6673L14.6363 13.1667C16.0389 13.1269 17.2087 14.2307 17.2503 15.6332L18.7497 15.5888ZM14.615 11.667H10.385V13.167H14.615V11.667ZM10.4063 11.6673C8.17632 11.604 6.3165 13.3589 6.25033 15.5888L7.74967 15.6332C7.79129 14.2307 8.9611 13.1269 10.3637 13.1667L10.4063 11.6673Z" fill="#000000"/>
+                                            </svg>
+                                            <span class="subtitle">2 Serving</span>
+                                        </div>
+    
+                                        <label class="bookmark-container">
+                                            <input type="checkbox" checked="checked" />
+                                            <svg
+                                              class="save-regular"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              height="1em"
+                                              viewBox="0 0 384 512"
+                                            >
+                                              <path
+                                                d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z"
+                                              ></path>
+                                            </svg>
+                                            <svg
+                                              class="save-solid"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              height="1em"
+                                              viewBox="0 0 384 512"
+                                            >
+                                              <path
+                                                d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"
+                                              ></path>
+                                            </svg>
+                                        </label>
+    
+                                    </div>
+                                </div>
+        
+                            </article>
+            
+                        </li> -->
+    
+                    </ul>
+            
+                    <!-- Explore More Recipes Button -->
+                    <a href="/Recipes.html" class="btn btn-primary section-btn">
+                        <span class="text text-1">View All Recipes</span>
+                        <span class="text text-2" aria-hidden="true">View All Recipes</span>
+                    </a>
+        
+            </section> <!-- ========== Latest Recipe Slider End ========== -->
+        
+        
+            <section class="section blog-section text-center" aria-labelledby="blog-section-title" data-blog-section>
+        
+               
+
+   
+            <!-- ---------- Categories Start ---------- -->
+            <section class="section text-center categories-section">
+                <header class="categories-header">
+                    <p class="subtitle subtitle--section">What’s Cooking?</p>
+                    <h2 class="title--section">Discover Recipes You’ll Love</2>
+                </header>
+            
+                <ul class="categories-list">
+                    
+                    <!-- Category Item -->
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Sugar-Free</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Egg-Free</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Lactose-Free</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Diabetic-Friendly</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Low-Carb </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">International Cuisine</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Under 30 Minutes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Kid-Friendly</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Holiday Specials</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">BBQ & Grilling </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Nut-Free</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Low-Sodium</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Keto Creations</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Soy-Free</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Vegetarian Favorites</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Vegan Treats</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">High-Protein</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Low-Calorie</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Dairy-Free</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Gluten-Free</span>
+                        </a>
+                    </li>
+        
+                    
+                </ul>
+
+            </section><!-- ========== Categories End ========== -->
+
+        </div>
+
+
+    </main>
+
+    <!-- ---------- Footer Start ---------- -->
+    <footer>
+        <div class="container">
+            <section class="section footer">
+    
+                <!-- Footer Top Section -->
+                <div class="footer__top">
+    
+                    <!-- Brand and Intro -->
+                    <div class="footer__brand">
+                        <a href="#" class="logo">
+                            <span>Egyptian Recipes website </span>
+                        </a>
+                        <p class="footer__description text">
+                            with our collection of recipes, tips, and inspiration. 
+                            Join our Egyptian community and start your flavorful journey today!
+                        </p>
+                    </div>
+    
+                    <!-- Back to Top Button -->
+                    <div class="footer__back-to-top">
+                        <a href="#top" class="back-to-top-btn" aria-label="Back to Top" data-back-top-btn> 
+                            <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 12H7M17 12L13 16M17 12L13 8M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#395733" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="text">Back to Top</span>
+                        </a>
+                    </div>
+    
+                </div>
+    
+                <div class="footer__body">
+                        <!-- Get in Touch Column -->
+                        <div class="footer__column">
+                            <h3 class="footer__title">Get in Touch</h3>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#" class="hover-underline" >
+                                        
+                                        <span class="span">Help Center</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover-underline" >
+                                        
+                                        <span class="span">Contact Us</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover-underline" >
+                                        
+                                        <span class="span">FAQs</span>
+                                    </a>
+                                <li>
+                                    <a href="#" class="hover-underline" >
+                                        
+                                        <span class="span">Feedback</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Section -->
+                    <div class="footer__newsletter">
+                        <div class="footer__newsletter-content">
+                            <h3 class="footer__title">Newsletter</h3>
+                            <p class="footer__newsletter-description text">
+                                Subscribe to receive the latest recipes, tips, and exclusive content delivered right to your inbox!
+                            </p>
+                        </div>
+                        <form class="footer__newsletter-form">
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Your email address"
+                                class="footer__input"
+                                autocomplete="off"
+                                required
+                            />
+                            <button type="submit" class="btn btn-primary footer__btn">
+                                <span>Subscribe</span>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+
+                <!-- Footer Bottom Section -->
+                <div class="footer__bottom">
+                    <!-- Copyright -->
+                    <p class="footer__copyright subtitle">
+                        &copy; 2024 Copyright by Rawan Nabil Fekry
+                        <a
+                            class="footer__author-link"
+                            href="https://www.linkedin.com/in/rawan-nabil-fekry?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Rawan Fekry
+                        </a>
+                    </p>
+    
+                    <!-- Social Links -->
+                    <ul class="social__list">
+                        <li>
+                            <a href="https://www.linkedin.com/in/rawan-nabil-fekry?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social__link" aria-label="LinkedIn">
+                                <svg fill="#395733" height="18px" width="18px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	                            viewBox="-143 145 512 512" xml:space="preserve">
+                                <path d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z
+                                    M41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7
+                                    c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4
+                                    c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6
+                                    c35.5,0,63.3,23,63.3,72.4V508.1z"/>
+                                </svg>
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </div>
+    
+            </section>
+        </div>
+    </footer> <!-- ========== Footer End ========== -->
+</body>
+</html>
